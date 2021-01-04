@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Nagaar Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+<body>
+    <nav class="top-navigation">
+        <a href="index.html" class="top-navigation_logo-container">
+            <img class="top-navigation_logo" src="assets/images/ElNagarLogoColored.png" alt="El-Nagar Logo" srcset="">
+            <img class="top-navigation_logo-text" src="assets/images/ElNagarTextColored (1).png" alt="El-Nagar Logo" srcset="">
+        </a>
+        <div class="top-navigation_logo-links">
+            <a class="top-navigation_logo-link" href="index.html">Home</a>
+            <a class="top-navigation_logo-link" href="lectures.html">Lectures</a>
+            <a class="top-navigation_logo-link" href="#">About Us</a>
+        </div>
+
+    </nav>
+    <div class="container">
+        <h2 id="lecture_title" class="basic_heading">Title</h2>
+        <div id="lecture_link-container"></div>
+        <p id="lecture_description">Title</p>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/view.js"></script>
+</body>
+</html>

@@ -3,6 +3,7 @@ const lecturesContainer = document.querySelector(".lectures-container")
 const addVideoItem = (videoObj, id)=>{
     const title = videoObj.title
     const description = videoObj.description
+    const grade = videoObj.grade
 
     const containerTag = document.createElement("a") 
     
@@ -25,7 +26,7 @@ const addVideoItem = (videoObj, id)=>{
 
     
     
-    containerTag.href = id
+    containerTag.href = `/view.html?id=${id}&grade=${grade}`
     titleTag.innerText = title
     decriptionTag.innerText = description
     imageTag.src = "assets/images/mathbookcalc.jpg"

@@ -42,7 +42,7 @@ addLecturesForm.addEventListener("submit",(e)=>{
         
         else if(kind === "link"){
             if(InputValue === "") inputMessageRun(InputSelector, 0 ,"please add your video url from Viemo") 
-            else if(!isUrl(InputValue)) inputMessageRun(InputSelector, 0 ,"please add a valid video url from Viemo")
+            else if(InputValue.length < 15 ) inputMessageRun(InputSelector, 0 ,`please add your video url from Viemo`)
             else{
                 inputMessageRun(InputSelector, 1)
                 return true
@@ -53,7 +53,6 @@ addLecturesForm.addEventListener("submit",(e)=>{
             if(InputValue === "") inputMessageRun(InputSelector, 0 ,"please add the grade of the lecture") 
             else{
                 inputMessageRun(InputSelector, 1)
-                console.log("s")
                 return true
             }
         }
@@ -99,9 +98,8 @@ addLecturesForm.addEventListener("submit",(e)=>{
             link:videoLinkValue,
             grade:videoGrade
         }
-        console.log(video)
         db.ref(`/lectures/${videoGrade}`).push(video)
         addLecturesForm.reset()
-        
+        window.location.replace("lectures.html");
     } 
 })
