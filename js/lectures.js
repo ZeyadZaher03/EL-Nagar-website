@@ -39,7 +39,7 @@ const addVideoItem = (videoObj, id)=>{
     return containerTag
 }
 
-db.ref("videos").on("value",(snapshot)=>{
+db.ref("lectures/3/").on("value",(snapshot)=>{
     snapshot.forEach((snapshotItem)=>{
         const videoObj = snapshotItem.val()
         const videoId = snapshotItem.key

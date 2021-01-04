@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Nagaar Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
 
 </head>
 <body>
     <nav class="top-navigation">
-        <div class="top-navigation_logo-container">
+        <a href="index.html" class="top-navigation_logo-container">
             <img class="top-navigation_logo" src="assets/images/ElNagarLogoColored.png" alt="El-Nagar Logo" srcset="">
             <img class="top-navigation_logo-text" src="assets/images/ElNagarTextColored (1).png" alt="El-Nagar Logo" srcset="">
-        </div>
+        </a>
         <div class="top-navigation_logo-links">
-            <a class="top-navigation_logo-link" href="#">Home</a>
-            <a class="top-navigation_logo-link" href="#">Lectures</a>
+            <a class="top-navigation_logo-link" href="index.html">Home</a>
+            <a class="top-navigation_logo-link" href="lectures.html">Lectures</a>
             <a class="top-navigation_logo-link" href="#">About Us</a>
         </div>
     </nav>
 
 
     <div class="container">
+        <h2 class="basic_heading ">Add Lecture</h2>
         <div class="add-lectures_container">
-            <h2 class="basic_heading">Add Lecture</h2>
             <form autocomplete="off" class="add-lectures_form">
                 <div class="add-lectures_Input-container">
                     <label class="add_lecture-label" for="video_title">Title: </label>
@@ -62,7 +63,6 @@
                     </div>
                 </div>
                 <div class="add-lectures_Input-container">
-                    <!-- https://vimeo.com/483832805 -->
                     <label class="add_lecture-label" for="video_grade">Select Grade: </label>
                     <select class="add-lectures_select" name="grade" id="video_grade">
                         <option value="" disabled selected hidden>Select your Lecture Grade</option>
@@ -75,13 +75,25 @@
                         <p class="add-lectures_Input-message"></p>
                     </div>
                 </div>
-                <div>
-                    <button class="add-lecture">Add Lecture</button>
+                <div class="add-lecture-button-container">
+                    <button class="add-lecture-button">Add Lecture</button>
                 </div>
             </form>
-            <a href="lectures.html">lectures</a>
+            <div class="add-lectures_container-image">
+                <img src="assets/images/undraw_media_player_ylg8.svg" alt="Videos">
+            </div>
         </div>
     </div>
+
+    <!-- <footer class="footer">
+        <div class="footer-logo-container">
+            <img class="footer-logo" src="assets/images/ElNagarLogoColored.png" alt="">
+            <img class="footer-logo-text" src="assets/images/ElNagarTextColored (1).png" alt="">
+        </div>
+        <div class="footer-info">
+            
+        </div>
+    </footer> -->
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>

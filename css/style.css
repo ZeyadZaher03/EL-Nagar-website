@@ -1,5 +1,8 @@
 /* ==== General Fixies ==== */
-
+/* font-family: 'Montserrat',
+sans-serif;
+font-family: 'Open Sans',
+sans-serif; */
 *,
 *::before,
 *::after {
@@ -25,10 +28,17 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat',
+    sans-serif;
 }
 
-
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans',
+    sans-serif;
+}
+h1 {
+    font-size: 4rem;
+}
 p {
     font-size: 1.6rem;
     margin: 0;
@@ -77,6 +87,7 @@ ul {
     border-radius: 50rem;
     display: inline-block;
     padding: .6rem 1.2rem;
+    font-weight: 500;
     background-color: #f9f9f9;
     margin-right: 1.5rem;
     transition: all 200ms ease-in-out;
@@ -93,12 +104,12 @@ ul {
 }
 
 .top-navigation_logo{
-    width: 4rem;
+    width: 5rem;
     margin-right: .5rem;
 }
 
 .top-navigation_logo-text{
-    width: 10rem;
+    width: 12rem;
 }
 /* ------ */
 
@@ -115,12 +126,13 @@ ul {
     display: flex;
     justify-content: space-between;
     margin: 1rem 1rem;
+    margin-bottom: 2rem;
     height: 15rem;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, .1) ;
 }
 
 .lecture-container_info{
-    padding:1.5rem 1rem;
+    padding: 1.5rem 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -156,28 +168,35 @@ ul {
 
 
 .container{
-    padding: 1rem 3rem;
+    margin: 5rem 0;
+    padding: 0 7rem;
 }
 /* add form page */
 /* .add-lectures_form{
 } */
 
 .basic_heading {
-    font-size:  3rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
     text-transform: capitalize;
+}
+
+.basic_heading-centered{
+    text-align: center;
 }
 
 .add-lectures_Input-container {
     width: 60rem;
-    margin: 1rem 0;
+    margin: 1rem 0 2rem 0;
     display: flex;
     align-items: center;
 }
 
 .add_lecture-label{
     display: block;
+    font-weight: 500;
     font-size:1.6rem;
+    width: 12rem;
     margin-right:2rem;
 }
 
@@ -195,9 +214,61 @@ ul {
     outline: none;
 }
 
-.add-lecture{
-    border-radius: 2px;
+.add-lecture-button-container{
+    margin-top: 3rem;
+}
+
+
+.add-lectures_container{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.add-lecture-button{
+    border-radius: 50rem;
     cursor: pointer;
-    border:1px solid #ccc;
-    padding: .5rem 1rem;
+    background-image: linear-gradient(45deg,var(--color-main), var(--color-sec));
+    border:0px ;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    padding: 1rem 2rem;
+}
+
+.add-lectures_container-image{
+    width: 100%;
+    margin-top: -3rem;
+}
+
+.add-lectures_container-image img {
+    width: 100%;
+}
+
+.footer{
+    background-color: #1c1c1c;
+    margin-top: 10rem;
+    width: 100%;
+    padding: 2rem 5rem;
+    height: 20rem;
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+}
+.footer-logo  {
+    width: 8rem;
+}
+.footer-logo-text  {
+    margin-left: .5rem;
+    width: 16rem;
+}
+
+.lectures-container{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
